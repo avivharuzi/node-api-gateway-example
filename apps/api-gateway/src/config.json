@@ -1,0 +1,25 @@
+{
+  "resources": [
+    {
+      "path": "jsonplaceholder",
+      "children": [
+        {
+          "path": "posts",
+          "method": {
+            "httpMethod": "ANY",
+            "endpointURL": "https://jsonplaceholder.typicode.com/posts",
+            "isProxy": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "users",
+      "method": {
+        "httpMethod": "ANY",
+        "endpointURL": "https://jsonplaceholder.typicode.com/users",
+        "isProxy": true
+      }
+    }
+  ]
+}
